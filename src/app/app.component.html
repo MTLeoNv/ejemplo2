@@ -1,3 +1,4 @@
+<!-- Mantiene la navbar y el contenido -->
 <header class="custom-navbar">
   <a href="#" class="logo"><i class="ri-verified-badge-line"></i><span>EVALUACIÓN</span></a>
   <ul class="navbar">
@@ -22,8 +23,10 @@
     <app-dado [valor]="valor3"></app-dado>
     <hr />
     <button type="button" class="btn btn-primary" (click)="tirarDados()">Jugar</button>
-
     <hr />
     <p>{{ resultado }}</p>
   </div>
 </main>
+
+<!-- 🚀 Agrega esto al final para evitar la advertencia -->
+<router-outlet></router-outlet>
